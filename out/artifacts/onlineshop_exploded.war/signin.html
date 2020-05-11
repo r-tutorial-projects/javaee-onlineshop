@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <meta charset="UTF-8">
+    <title>Onlineshop</title>
+</head>
+<body>
+<header>
+    <h1 class="title">Onlineshop</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="signin.html">Login</a>
+        <a href="sell.html">Sell</a>
+        <a href="search.html">Search</a>
+    </nav>
+</header>
+
+<form action="signin" method="post">
+    <fieldset>
+        <legend>SignIn</legend>
+        <table>
+            <tbody>
+            <tr>
+                <th>
+                    <label for="email">Mail:</label>
+                </th>
+                <td>
+                    <input type="email" name="email" id="email" size="40"
+                           maxlength="40" title="mail@example.com" placeholder="Enter Mail"
+                           pattern=".{6,40}" required="required">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="password">Password:</label>
+                </th>
+                <td>
+                    <input type="password" name="password" id="password" size="40"
+                           maxlength="40" title="6-40 Symbols" placeholder="Enter Password"
+                           pattern=".{6, 40}" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td /><td>
+                    <input type="reset">
+                    <input type="submit">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>
+
+</body>
+</html>
